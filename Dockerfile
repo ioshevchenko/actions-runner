@@ -4,6 +4,7 @@ ARG RUNNER_VERSION=latest
 FROM ${BASE_IMAGE}:${RUNNER_VERSION}
 
 USER root
+
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
     build-essential \
@@ -20,10 +21,21 @@ RUN apt-get update && \
     patch \
     wget \
     zlib1g-dev \
-	libnss3-dev \
-    libgdk-pixbuf2.0-dev  \
-    libgtk-3-dev \
-    libxss-dev \
+
+# Chrome dependency Instalation
+RUN apt-get update && apt-get install -y \
+    libnss3 \
+    libxss1 \
+    libatk-bridge2.0-0 \
+    libgtk-3-0 \
+    libasound2 \
+    libcups2 \
+    libxkbcommon-x11-0 \
+    libxcomposite-dev \
+    libxdamage1 \
+    libgbm-dev \
+    libpangocairo-1.0-0 \
+    libgconf-2-4 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 

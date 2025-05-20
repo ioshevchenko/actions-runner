@@ -20,7 +20,7 @@ RUN apt-get update && \
     openssh-client \
     patch \
     wget \
-    zlib1g-dev \
+    zlib1g-dev
 
 # Chrome dependency Instalation
 RUN apt-get update && apt-get install -y \

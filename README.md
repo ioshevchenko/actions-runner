@@ -1,4 +1,6 @@
-# GitHub Actions Runner, Krystal-flavored
+# GitHub Actions Runner, ioshevchenko-flavored
+
+Original image created by [krystal](https://github.com/krystal)
 
 This is a customized version of the official
 [actions/runner](https://github.com/actions/runner) container image, primarily
@@ -14,5 +16,5 @@ Differences from official image:
 
 ## Usage
 
-Customize your runner to use `ghcr.io/krystal/actions-runner:latest` instead or
+Customize your runner to use `ghcr.io/ioshevchenko/actions-runner:latest` instead or
 `ghcr.io/actions/actions-runner:latest`.

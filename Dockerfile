@@ -20,6 +20,10 @@ RUN apt-get update && \
     patch \
     wget \
     zlib1g-dev \
+	libnss3-dev \
+    libgdk-pixbuf2.0-dev  \
+    libgtk-3-dev \
+    libxss-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
